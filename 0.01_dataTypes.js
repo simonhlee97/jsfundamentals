@@ -41,6 +41,7 @@ console.log(help.toUpperCase());
 var isTall = false;
 var isKorean = true;
 var isCoding = true;
+
 console.log(isTall, isKorean, isCoding);
 
 
