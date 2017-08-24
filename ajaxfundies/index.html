@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>ajax fundamentals</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<button class="btn btn-primary">Search</button><input id="searchbox" type="text">
+	<hr>
+	<br>
+	<button class="btn btn-primary">Wookie</button>
+	<hr>
+	<div class="container">
+
+		<div class="row col-md-6">
+			<table class="table table-striped table-bordered">
+				<thead>
+			      <tr>
+			        <th>Planet Name</th>
+			      </tr>
+			    </thead>
+			    <tbody id="planetdata">
+			      	<!-- ajax call to API data will go in here -->
+			    </tbody>
+			</table>
+		</div>
+
+		<div class="row col-md-6">
+			<table class="table table-striped table-bordered" id="starships">
+					<thead>
+				      <tr>
+				        <th>Ship</th>
+				      </tr>
+				    </thead>
+				    <tbody id="shipname">
+						<!-- ajax call to API data will go in here -->
+				    </tbody>
+			</table>
+		</div>
+	</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
