@@ -3,6 +3,10 @@ body {
 	font-family: helvetica, sans-serif;
 	background-color: #a3b3d1;
 }
+img {
+	width: 400px;
+	height: auto;
+}
 #triviaContainer {
 	color: #c9cfd8;
 	height: auto;
