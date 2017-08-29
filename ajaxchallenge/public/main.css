@@ -14,9 +14,14 @@ body {
 	padding-bottom: 45px;
 	background-color: #11284c;
 	margin: 0px auto;
+	display: none;
 }
 #vspace {
 	padding: 0.4em;
+}
+#triviaShot {
+	width: 380px;
+	height: auto;
 }
 .myButton {
 	-moz-box-shadow:inset 0px 1px 0px 0px #91b8b3;
