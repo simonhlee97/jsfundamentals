@@ -11,7 +11,7 @@ $('#startbtn').click(function(){
             });
             
         });
-        console.log(myArray[5]);
+        console.log(myArray);
     });
 
 
