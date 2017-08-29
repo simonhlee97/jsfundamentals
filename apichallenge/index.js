@@ -9,5 +9,5 @@ app.get('/', function(req,res){
 })
 
 http.listen(3000, function(){
-	console.log('running app.js on Port 3000');
+	console.log('localhost is running index.js on Port 3000');
 })
