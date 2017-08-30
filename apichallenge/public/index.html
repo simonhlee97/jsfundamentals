@@ -9,7 +9,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-  
+<div class="wrapper"> 
+
 <h1>Ajax, API Challenge</h1>
 
 <h4>Trivia Game</h4>
@@ -20,8 +21,33 @@
 
 <hr>
 
-<button id="startbtn" class="myButton">Start Game</button>
+<button id="startButton" class="myButton">Start Game</button>
+<p id="vspace"></p>
 
+
+
+<div id="triviaContainer">
+<!-- the trivia Container -->
+
+
+</div>
+<p id="vspace"></p>
+<br>
+<button id="#submitButton" class="myButton" onclick="calculateScore()">Submit</button>
+
+<hr>
+
+<div id="displayScore">
+
+</div>
+
+<input type='submit' id="prev" class='myButton' value='previous'>
+<input type='submit' id="next" class='myButton' value='next'>
+
+</div>
+<p class="vspace"></p>
+<footer class="vspace">created by: Simon Lee, August 2017, Eleven Fifty Academy</footer>
 <script src="main.js"></script>
 </body>
 </html>
+

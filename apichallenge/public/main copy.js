@@ -66,12 +66,7 @@
 //     console.log(myArray[1].question);
 //     console.log(myArray[1].correct_answer);
 // });
-function calculateScore(){
-        var score = 5;
-        // if selected radio button = correct, score++
-        var finalScore = score / 10;
-        console.log(finalScore);
-    };
+
 
 function addTrivia(trivia){
     let counter = 1;
@@ -96,26 +91,24 @@ function addTrivia(trivia){
         "<input type='radio' name='choices' value='b'> B. " + newArray[1] + "<br>" +
         "<input type='radio' name='choices' value='c'> C. " + newArray[2] + "<br>" +
         "<input type='radio' name='choices' value='d'> D. " + newArray[3] + "<br>" +
-        "<p></form><hr><p>"
+        "<p><input type='submit' class='myButton'><p></form><hr><p>"
         $('#triviaContainer').append(tenQuestions);
         counter++;
     });
 };
 
 $(function(){
+    $('#startbtn').click(function(){
 
-    $('#startButton').click(function(){
         $.ajax({
             type: 'GET',
             url: "https://opentdb.com/api.php?amount=10&difficulty=medium&type=multiple"
         }).done(function(data){
-            // console.log(data.results);
-            addTrivia(data.results); // function addTrivia is written above
+            console.log(data.results);
+            addTrivia(data.results); // pulls 10 questions from API
             $('#triviaContainer').fadeIn('slow');
-        });
-    $('#startButton').fadeOut(1200);  
+        })
+        
     });
-    
 });
-
 

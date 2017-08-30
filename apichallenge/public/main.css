@@ -1,5 +1,4 @@
 body {
-	text-align: center;
 	font-family: helvetica, sans-serif;
 	background-color: #a3b3d1;
 }
@@ -9,19 +8,25 @@ img {
 }
 #triviaContainer {
 	color: #c9cfd8;
-	height: auto;
-	border-radius: 9px;
-	width: 75%;
+	font-size: 1.6rem;
+	font-weight: 400;
 	text-align: left;
+	height: auto;
+	border-radius: 8px;
+	width: 80%;
 	padding-top: 45px;
-	padding-left: 8em;
+	padding-left: 6em;
 	padding-bottom: 45px;
 	background-color: #11284c;
 	margin: 0px auto;
 	display: none;
 }
-#vspace {
-	padding: 0.4em;
+.vspace {
+	padding-top: 2.9em;
+	text-align: center;
+}
+#prev, #next {
+	display: none;
 }
 #triviaShot {
 	width: 380px;
@@ -66,6 +71,16 @@ img {
 	position:relative;
 	top:1px;
 }
+#displayScore {
+	color: maroon;
+	font-size: 2.5rem;
+	font-weight: bold;
+}
 .myFooter {
 	margin: 55px auto;
+}
+.wrapper {
+	text-align: center;
+	width: 70%;
+	margin: 20px auto;
 }
